@@ -64,11 +64,11 @@ class _MovieSliderState extends State<MovieSlider> {
         if(widget.movies.isEmpty){
         return SizedBox(
         width: double.infinity,
-        height: (sizeScreen.height*0.5-sizeAppBar.height),
+        height: (sizeScreen.height*0.6-sizeAppBar.height),
         child: const Center(child: CircularProgressIndicator()),
       );
     }else{
-      print('aqui');
+      
         //final  movies = snapshot.data!;
         /*scrollControler.animateTo(
           scrollControler.position.pixels+120,
@@ -76,7 +76,7 @@ class _MovieSliderState extends State<MovieSlider> {
           curve: Curves.fastOutSlowIn);*/
          return  SizedBox(
         width: double.infinity,
-        height: (sizeScreen.height*0.5)-sizeAppBar.height,
+        height: (sizeScreen.height*0.6)-sizeAppBar.height,
         child: Column(
           //alinar los objetos,CLOUM NO TOMA EN CONCIDERACION LA ALINEACION DE TEXTOS OJO
           crossAxisAlignment: CrossAxisAlignment.start,
